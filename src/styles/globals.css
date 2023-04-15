@@ -90,6 +90,7 @@ body {
 
 body {
   height: 100%;
+  background-color: whitesmoke;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

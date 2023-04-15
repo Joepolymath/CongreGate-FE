@@ -1,9 +1,9 @@
 #__next {
   height: 100%;
 }
-.main {
+/* .main {
   background-color: blueviolet;
-}
+} */
 
 /* ======= NAV BAR SECTION ============== */
 .nav {
@@ -127,7 +127,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--foreground-color);
-  margin: 4em 0;
+  margin: 3rem 0;
   color: var(--foreground-color);
   padding: 1em;
 }

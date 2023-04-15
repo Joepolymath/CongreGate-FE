@@ -70,6 +70,7 @@
 .menu > ul > li:last-child {
   background-color: var(--orange-color);
   border-radius: 10px;
+  height: 70%;
 }
 
 /* ======HERO SECTION =========*/

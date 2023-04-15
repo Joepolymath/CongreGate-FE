@@ -1,15 +1,31 @@
 import React from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 import styles from '@/styles/Home.module.css';
 import Navbar from '../navbar/Navbar';
+import Link from 'next/link';
 
 const Hero = () => {
+  const targetRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: targetRef,
+    offset: ['end end', 'end start'],
+  });
+  const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.8]);
   return (
-    <div className={styles.hero}>
+    <motion.div
+      className={styles.hero}
+      ref={targetRef}
+      // style={{ scale, animationDuration: 0.5 }}
+    >
       <Navbar />
-      <div className={styles.heroMain}>
+      <motion.div className={styles.heroMain}>
         <div className={styles.heroWelcome}>
           <h1>Welcome</h1>
           <h3>Find out more about us...</h3>
+          <Link href="#about" className={styles.heroButton}>
+            About
+          </Link>
         </div>
         <div className={styles.heroForm}>
           <h2>Join Us</h2>
@@ -32,8 +48,8 @@ const Hero = () => {
             </form>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

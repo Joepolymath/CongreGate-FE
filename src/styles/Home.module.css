@@ -127,7 +127,7 @@
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--foreground-color);
-  margin: 3rem 0;
+  margin: 10% 0;
   color: var(--foreground-color);
   padding: 1em;
 }

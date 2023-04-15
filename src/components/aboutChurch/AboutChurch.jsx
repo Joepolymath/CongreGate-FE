@@ -10,11 +10,11 @@ const AboutChurch = () => {
     target: targetRef,
     offset: ['start end', 'end start'],
   });
-  const translate = useTransform(scrollYProgress, [0, 1], [-200, 200]);
+  const translate = useTransform(scrollYProgress, [0, 1], [-150, 150]);
   const x = useTransform(
     scrollYProgress,
-    [0, 0.25, 0.7, 1],
-    ['0%', '-20%', '20%', '0%']
+    [0, 0.25, 0.7],
+    ['0%', '-20%', '20%']
   );
 
   const y = useTransform(
@@ -33,7 +33,7 @@ const AboutChurch = () => {
       <div className={styles.aboutChurch}>
         <motion.div
           className={styles.imageDiv}
-          style={{ x }}
+          style={{ translateX: translate }}
           transition={{ delay: 5, ease: 'linear', duration: 0.5 }}
         >
           <Image

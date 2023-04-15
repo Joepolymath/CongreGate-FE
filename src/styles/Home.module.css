@@ -223,14 +223,55 @@
   text-align: justify;
 }
 
+.testimoniesSection {
+  background: url('../assets/testimonies-section.png');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: rgba(250, 235, 215, 0.1);
+}
+
 .testimoniesSection > h2 {
   text-align: center;
   font-family: var(--default-font-family);
   font-weight: 600;
   font-size: 2.5rem;
   color: var(--orange-color);
-  background-color: bisque;
+  /* background-color: bisque; */
 }
 .imageDiv {
   width: 40%;
+}
+
+.testimonyCard {
+  background-color: #fff;
+  width: 40%;
+  height: 60%;
+  margin: 3em;
+  padding: 4em;
+  border-radius: 10px;
+  font-family: var(--default-font-family);
+}
+.testimonyContent {
+  text-align: justify;
+}
+.testimonyHead {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+.testimonyHead > h2 {
+  margin: 15px;
+}
+/* .swiper {
+  background-color: blueviolet;
+} */
+
+.swiperSlide {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 90% !important;
+  height: 100%;
 }

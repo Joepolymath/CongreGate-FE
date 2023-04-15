@@ -10,7 +10,7 @@ const AboutChurch = () => {
     target: targetRef,
     offset: ['start end', 'end start'],
   });
-  const translate = useTransform(scrollYProgress, [0, 1], [-150, 150]);
+  const translate = useTransform(scrollYProgress, [0, 0.5, 1], [-150, 50, 0]);
   const x = useTransform(
     scrollYProgress,
     [0, 0.25, 0.7],

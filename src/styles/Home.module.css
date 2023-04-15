@@ -275,3 +275,6 @@
   width: 90% !important;
   height: 100%;
 }
+.sample-slider .swiper-pagination-bullet {
+  background-color: yellow;
+}

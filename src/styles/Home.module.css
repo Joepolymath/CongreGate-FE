@@ -81,6 +81,7 @@
   background-size: cover;
   color: var(--foreground-color);
   height: 100vh;
+  max-height: 800px;
 }
 
 .heroMain {
@@ -171,6 +172,7 @@
   font-size: 1.4em;
   box-shadow: 0px 6px 12px rgba(5, 10, 16, 0.25);
   font-family: var(--default-font-family);
+  max-height: 50px;
 }
 
 .heroForm > .formDiv > form > label {
